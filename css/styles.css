@@ -1,5 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
+  margin: 15px;
 }
 ul {
   display: flex;
@@ -34,4 +35,7 @@ h1 {
 }
 .logo {
   color: #000;
+}
+li {
+  padding-bottom: 10px;
 }
