@@ -2,13 +2,18 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 15px;
 }
-ul {
+.menu {
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  list-style: none;
   color: #69696a;
   text-decoration: none;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .button {
@@ -38,4 +43,80 @@ h1 {
 }
 li {
   padding-bottom: 10px;
+  list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    flex: 2;
+  }
+  .circle {
+    position: relative;
+    z-index: -1;
+    right: 90px;
+    top: 150px;
+    background-color: rgba(247, 136, 167, 0.6);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+  .circle2 {
+    position: relative;
+    right: -40px;
+    top: 50px;
+    background-color: rgba(247, 193, 162, 0.7);
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+  .circle3 {
+    position: relative;
+    z-index: -1;
+    right: -80px;
+    top: -170px;
+    background-color: rgba(207, 130, 213, 0.6);
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+  }
+  .txt {
+    padding-top: 20vh;
+  }
+  p {
+    width: 50%;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+  .button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  li {
+    margin-right: 25px;
+  }
 }
